@@ -14,6 +14,11 @@ export function now() {
     return todayTime + '.' + todayMS;
 }
 
+app.get("/", function(_, res) {
+    console.log(`${now()} Answering for /`);
+    res.send("Alive and kicking");
+});
+
 app.get("/question", async (req, res) => {
     const {
         q,
@@ -54,6 +59,6 @@ app.get("/question", async (req, res) => {
 });
 
 
-app.listen(8300, () => {
+app.listen(8300, '0.0.0.0', () => {
     console.log(`${now()} Server is running on port 8300`);
 });
