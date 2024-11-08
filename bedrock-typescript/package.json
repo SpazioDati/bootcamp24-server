@@ -1,0 +1,19 @@
+{
+  "name": "bootcamp-24-example-impl-typescript-bedrock",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "run": "dotenv -- tsx watch main.ts"
+  },
+  "dependencies": {
+    "@aws-sdk/client-bedrock": "^3.687.0",
+    "@aws-sdk/client-bedrock-runtime": "^3.687.0",
+    "@types/express": "4.17.21",
+    "dotenv": "16.4.5",
+    "dotenv-cli": "7.4.2",
+    "express": "^4.21.1",
+    "tsx": "4.19.2",
+    "typescript": "5.6.3"
+  }
+}
