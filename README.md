@@ -96,13 +96,18 @@ poetry install
 
 pip install -r requirements.txt
 ```
+There are two implementations of the server, one using AWS Bedrock API (with 
+Claude Sonnet 3.5, but Bedrock offers many other foundational models) and 
+another that integrates OpenAI API.
 
-and run it using `dotenv` to load the env vars
+To run the Bedrock-based implementation use `dotenv` to load the env vars 
+from `../.env` file
 
 ```shell
-poetry run dotenv -f ../.env run -- flask run 
+poetry run dotenv -f ../.env run -- flask --app bedrock run 
 
 # or if you are using your own virtualenv
 
-dotenv -f ../.env run -- flask run
+dotenv -f ../.env run -- flask --app bedrock run
 ```
+To run the OpenAI version use `flask --app openai run`

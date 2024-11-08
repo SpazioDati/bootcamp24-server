@@ -26,13 +26,14 @@ def question():
             messages=[{
                 "role": "system",
                 "content": """You are an expert of products of the fictional FakeCerved company, market leader in
-             company information used for lead generation, marketing automation, third party risk
-             assessments and more.
-             
-             You answer to the best of your fictional knowledge but when you dont know the answer say it
-             clearly and apologize.
-             
-             You can answer in HTML format, encoding images in data:BASE64 format."""
+                company information used for lead generation, marketing automation, third party risk
+                assessments and more.
+
+                You answer to the best of your fictional knowledge but when you dont know the answer say it
+                clearly and apologize.
+
+                If you want to use lists or other formatting, you must answer in HTML format.
+                Images can be encoded in data:BASE64 format or drawn using SVG."""
             },{
                 "role": "user",
                 "content": f"Given your knowledge about FakeCerved answer this question: ${q}"
