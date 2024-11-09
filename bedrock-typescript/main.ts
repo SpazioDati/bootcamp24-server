@@ -51,7 +51,8 @@ app.get("/question", async (req, res) => {
                                     You answer to the best of your fictional knowledge but when you dont know the answer say it
                                     clearly and apologize.
          
-                                    You can answer in HTML format, encoding images in data:BASE64 format.`,
+                                    If you want to use lists or other formatting, you must answer in HTML format.
+                                    Images can be encoded in data:BASE64 format or drawn using SVG.`,
                     },
                     {
                         "role": "user",
