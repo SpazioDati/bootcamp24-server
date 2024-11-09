@@ -1,11 +1,5 @@
 .DS_Store
 node_modules
-typescript/.env
-typescript/.env.example
-!typescript/.env.example
-bedrock-typescript/.env
-bedrock-typescript/.env.example
-!bedrock-typescript/.env.example
+**/.env
 .idea
-poetry.lock
 **/__pycache__/**
